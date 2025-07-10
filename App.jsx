@@ -20,7 +20,10 @@ export default function App() {
           <button
             key={item}
             onClick={() => setTab(item)}
-            className={\`px-4 py-2 rounded-xl bg-black/60 hover:bg-black/80 transition \${tab === item ? 'ring-2 ring-white' : ''}\`}
+            className={
+  "px-4 py-2 rounded-xl bg-black/60 hover:bg-black/80 transition " +
+  (tab === item ? "ring-2 ring-white" : "")
+}
           >
             {item.charAt(0).toUpperCase() + item.slice(1)}
           </button>
